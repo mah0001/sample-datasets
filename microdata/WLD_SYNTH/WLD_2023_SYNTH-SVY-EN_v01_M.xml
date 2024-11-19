@@ -1,0 +1,3089 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codeBook version="2.5" ID="WLD_2023_SYNTH-SVY-EN_v01_M" xml-lang="en" xmlns="ddi:codebook:2_5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd">
+<docDscr>
+  <citation>
+    <titlStmt>
+      <IDNo></IDNo>
+      <titl></titl>
+    </titlStmt>
+    <prodStmt>
+      <producer abbr="" affiliation="World Bank" role="">OD</producer>
+      <prodDate date="2023-05-01T04:00:00.000Z">2023-05-01T04:00:00.000Z</prodDate>
+      <software version="beta">MetadataEditor</software>
+    </prodStmt>
+    <verStmt>
+      <version date="2023-05-01T04:00:00.000Z">1.0 EN</version>
+      <notes></notes>
+      <verResp></verResp>
+    </verStmt>
+  </citation>
+</docDscr>
+<stdyDscr>
+  <citation>
+    <titlStmt>
+      <titl>Synthetic Data for an Imaginary Country, Sample, 2023</titl>
+      <subTitl>A synthetic hierarchical dataset for simulation and training purposes </subTitl>
+      <altTitl/>
+      <parTitl/>
+      <IDNo>WLD_2023_SYNTH-SVY-EN_v01_M</IDNo>
+    </titlStmt>
+    <rspStmt>
+      <AuthEnty affiliation="World Bank">Development Data Group, Data Analytics Unit</AuthEnty>
+    </rspStmt>
+    <prodStmt>
+      <copyright/>
+      <software version="beta" date="2024-10-31">MetadataEditor</software>
+      <prodDate/>
+      <prodPlac/>
+      <fundAg abbr="JDC" role="Sponsored research work for the development of synthetic data for the purpose of assessing statistical disclosure risk measures.">UNHCR-World Bank Joint Data Center on Forced Displacement</fundAg>
+      <grantNo>KP-P174174-TF0B5124</grantNo>
+    </prodStmt>
+    <distStmt>
+      <depDate date=""/>
+      <distDate date=""/>
+    </distStmt>
+    <serStmt>
+      <serName>Synthetic data</serName>
+      <serInfo><![CDATA[This dataset is part of a collection of fully synthetic data generated, for training and simulation purposes, for an imaginary middle-income country. The dataset is available in English and French. A full population dataset (~10 million individuals) is also available in English and French as a &quot;synthetic census dataset&quot;.]]></serInfo>
+    </serStmt>
+    <verStmt>
+      <version date="2023-05-01T04:00:00.000Z">V. 2023-05-01 8K HH EN</version>
+      <verResp>World Bank, Development Data Group</verResp>
+      <notes><![CDATA[Dataset generated using RealTabFormer (sample of 8,000 households), with post-processing. English version.]]></notes>
+    </verStmt>
+    <biblCit format=""><![CDATA[]]></biblCit>
+    <notes><![CDATA[]]></notes>
+  </citation>
+  <studyAuthorization date="">
+    <authorizationStatement><![CDATA[]]></authorizationStatement>
+  </studyAuthorization>
+  <stdyInfo>
+    <studyBudget><![CDATA[]]></studyBudget>
+    <subject>
+      <keyword vocab="" vocabURI="">synthetic data</keyword>
+      <keyword vocab="" vocabURI="">open data</keyword>
+      <keyword vocab="" vocabURI="">safe data</keyword>
+      <keyword vocab="" vocabURI="">demographics</keyword>
+      <keyword vocab="" vocabURI="">education</keyword>
+      <keyword vocab="" vocabURI="">mortality</keyword>
+      <keyword vocab="" vocabURI="">fertility</keyword>
+      <keyword vocab="" vocabURI="">child malnutrition</keyword>
+      <keyword vocab="" vocabURI="">labor, employment</keyword>
+      <keyword vocab="" vocabURI="">housing</keyword>
+      <keyword vocab="" vocabURI="">dwelling</keyword>
+      <keyword vocab="" vocabURI="">water and sanitation</keyword>
+      <keyword vocab="" vocabURI="">household expenditure</keyword>
+      <keyword vocab="" vocabURI="">migration</keyword>
+    </subject>
+    <abstract><![CDATA[The dataset is a relational dataset of 8,000 households households, representing a sample of the population of an imaginary middle-income country. The dataset contains two data files: one with variables at the household level, the other one with variables at the individual level. It includes variables that are typically collected in population censuses (demography, education, occupation, dwelling characteristics, fertility, mortality, and migration) and in household surveys (household expenditure, anthropometric data for children, assets ownership). The data only includes ordinary households (no community households). The dataset was created using REaLTabFormer, a model that leverages deep learning methods. The dataset was created for the purpose of training and simulation and is not intended to be representative of any specific country.  
+
+The full-population dataset (with about 10 million individuals) is also distributed as open data.]]></abstract>
+    <sumDscr>
+      <timePrd date="2023" event="start" cycle=""/>
+      <timePrd date="2023" event="end" cycle=""/>
+      <collDate date="2023" event="start" cycle=""/>
+      <collDate date="2023" event="end" cycle=""/>
+      <nation abbr="WLD">World</nation>
+      <geogCover>The dataset is a synthetic dataset for an imaginary country. It was created to represent the population of this country by province (equivalent to admin1) and by urban/rural areas of residence.</geogCover>
+      <geogCoverNote/>
+      <geogUnit>province (admin1), district (admin2)</geogUnit>
+      <anlyUnit><![CDATA[Household, Individual]]></anlyUnit>
+      <universe><![CDATA[The dataset is a fully-synthetic dataset representative of the resident population of ordinary households for an imaginary middle-income country.]]></universe>
+      <dataKind>ssd</dataKind>
+    </sumDscr>
+    <qualityStatement>
+      <standardsCompliance>
+        <complianceDescription/>
+      </standardsCompliance>
+      <otherQualityStatement>The synthetic dataset is intended to provide a realistic representation of a middle-income countries. A set of summary indicators/tables was produced to ensure the realistic aspect of the data. </otherQualityStatement>
+    </qualityStatement>
+    <notes><![CDATA[]]></notes>
+    <exPostEvaluation completionDate="" type="">
+      <evaluationProcess/>
+      <outcomes/>
+    </exPostEvaluation>
+  </stdyInfo>
+  <method>
+    <dataColl>
+      <timeMeth/>
+      <frequenc/>
+      <sampProc><![CDATA[The sample size was set to 8,000 households. The fixed number of households to be selected from each enumeration area was set to 25. In a first stage, the number of enumeration areas to be selected in each stratum was calculated, proportional to the size of each stratum (stratification by geo_1 and urban/rural). Then 25 households were randomly selected within each enumeration area. The R script used to draw the sample is provided as an external resource.]]></sampProc>
+      <sampleFrame>
+        <sampleFrameName>Synthetic Data for an Imaginary Country, Full Population, 2023 (WLD_2023_SYNTH-CENS-EN_v01_M)</sampleFrameName>
+        <custodian>World Bank</custodian>
+        <universe/>
+        <frameUnit isPrimary="true">
+          <unitType numberOfUnits="">Household</unitType>
+        </frameUnit>
+        <updateProcedure/>
+      </sampleFrame>
+      <deviat/>
+      <collMode>other</collMode>
+      <resInstru><![CDATA[The dataset is a synthetic dataset. Although the variables it contains are variables typically collected from sample surveys or population censuses, no questionnaire is available for this dataset. A &quot;fake&quot; questionnaire was however created for the sample dataset extracted from this dataset, to be used as training material.]]></resInstru>
+      <instrumentDevelopment type=""/>
+      <collSitu><![CDATA[]]></collSitu>
+      <actMin><![CDATA[]]></actMin>
+      <ConOps><![CDATA[]]></ConOps>
+      <weight><![CDATA[Sample weights were calculated that take the stratification into account. See the R script provided as an external resource.]]></weight>
+      <cleanOps><![CDATA[The synthetic data generation process included a set of &quot;validators&quot; (consistency checks, based on which synthetic observation were assessed and rejected/replaced when needed). Also, some post-processing was applied to the data to result in the distributed data files. ]]></cleanOps>
+    </dataColl>
+    <notes><![CDATA[The dataset was generated using REaLTabFormer, a four-level hierarchical generative model. The first-level model is the household composition generator, which generates variables that define each household&#039;s composition (household size and basic demographic profile of members, including age and relationship to the head of household). The second-level model is the household-level variables generator, which generates the variables whose values are common to all household members (such as dwelling characteristics) based on the household composition. The third-level model is the household-head generator, which generates observations for the head of the households based on the output of the previous two models. The fourth-level model is the household member generator, which generates data on the household members, excluding the head, for households of size two and above. The household member generator model uses the data generated by the household composition, household-level variables, and household head generator models. This hierarchical model provides relational dependencies within a household that would not be guaranteed if all records were generated independently.
+
+To implement the different models, we adopted a transformer architecture. The household composition generator is a decoder model that generates data from normally distributed noise. The other three models use a sequence-to-sequence model inspired by the application of deep learning to language translation.
+
+More detailed information is available in the Technical Documentation provided as an external PDF document.]]></notes>
+    <anlyInfo>
+      <respRate><![CDATA[This is a synthetic dataset; the &quot;response rate&quot; is 100%.]]></respRate>
+      <EstSmpErr><![CDATA[]]></EstSmpErr>
+      <dataAppr><![CDATA[]]></dataAppr>
+    </anlyInfo>
+    <stdyClas><![CDATA[]]></stdyClas>
+    <dataProcessing type="synthetic data generation">The synthetic data generation process is described in detail in a technical document "Generating a relational synthetic dataset for an imaginary country - Technical documentation" provided as external resource.</dataProcessing>
+  </method>
+  <dataAccs>
+    <setAvail>
+      <accsPlac URI="https://microdata.worldbank.org/index.php/catalog/study/WLD_2023_SYNTH-SVY-EN_v01_M">World Bank Microdata Library</accsPlac>
+      <origArch/>
+      <avlStatus/>
+      <collSize/>
+      <complete/>
+      <fileQnty>2 (one at the household level, one at the individual level). The two data files can be merged using variable "hid" as merging key.</fileQnty>
+      <notes><![CDATA[Data available as open data (CC BY 4.0 license)]]></notes>
+    </setAvail>
+    <useStmt>
+      <restrctn>The dataset was generated as a fully-synthetic dataset. The model used to create the synthetic observations includes multiple procedures to avoid overfitting and data-copying. Also, the data used for training the model went through processes of sampling and recoding that make it impossible to link a synthetic observation to an actual observation. The dataset is thus safe for dissemination. It can be used with no restriction and is shared as open data.  </restrctn>
+      <contact affiliation="" URI="" email="">World Bank, Microdata Library</contact>
+      <citReq><![CDATA[]]></citReq>
+      <deposReq><![CDATA[]]></deposReq>
+      <conditions><![CDATA[]]></conditions>
+      <disclaimer><![CDATA[The data are to be used for training or simulation purposes only. It is not intended to be representative of any particular country, and should not be used for inference purpose. ]]></disclaimer>
+    </useStmt>
+    <notes><![CDATA[]]></notes>
+  </dataAccs>
+  <notes><![CDATA[]]></notes>
+</stdyDscr>
+<fileDscr ID="F2">
+  <fileTxt>
+    <fileName>WLD_2023_SYNTH-SVY-IND-EN_v01_M</fileName>
+    <fileCont></fileCont>
+    <dimensns>
+      <caseQnty>32396</caseQnty>
+      <varQnty>27</varQnty>
+    </dimensns>
+    <dataChck></dataChck>
+    <dataMsng></dataMsng>
+    <verStmt>
+      <version></version>
+    </verStmt>
+  </fileTxt>
+  <notes></notes>
+</fileDscr>
+<fileDscr ID="F3">
+  <fileTxt>
+    <fileName>WLD_2023_SYNTH-SVY-HLD-EN_v01_M</fileName>
+    <fileCont></fileCont>
+    <dimensns>
+      <caseQnty>8000</caseQnty>
+      <varQnty>49</varQnty>
+    </dimensns>
+    <dataChck></dataChck>
+    <dataMsng></dataMsng>
+    <verStmt>
+      <version></version>
+    </verStmt>
+  </fileTxt>
+  <notes></notes>
+</fileDscr>
+<dataDscr>
+<var ID="V50" name="hid" files="F2" intrvl="contin">
+  <varFormat type="character"/>
+  <location width="12"/>
+  <labl>Unique household identifier</labl>
+  <sumStat type="vald">32396</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">None</sumStat>
+  <sumStat type="max">None</sumStat>
+  <sumStat type="mean">None</sumStat>
+  <sumStat type="stdev">None</sumStat>
+</var>
+<var ID="V51" name="idno" files="F2" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="12"/>
+  <labl>Person identification number</labl>
+  <sumStat type="vald">32396</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1.0</sumStat>
+  <sumStat type="max">22.0</sumStat>
+  <sumStat type="mean">3.087510803802939</sumStat>
+  <sumStat type="stdev">2.0475208479570877</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <catStat type="stdev"/>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+  </catgry>
+  <catgry>
+    <catValu>14</catValu>
+  </catgry>
+  <catgry>
+    <catValu>15</catValu>
+  </catgry>
+  <catgry>
+    <catValu>16</catValu>
+  </catgry>
+  <catgry>
+    <catValu>17</catValu>
+  </catgry>
+  <catgry>
+    <catValu>18</catValu>
+  </catgry>
+  <catgry>
+    <catValu>19</catValu>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+  </catgry>
+  <catgry>
+    <catValu>22</catValu>
+  </catgry>
+</var>
+<var ID="V52" name="relation" files="F2" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="14"/>
+  <labl>Relationship to the head of household</labl>
+  <sumStat type="vald">32396</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1.0</sumStat>
+  <sumStat type="max">5.0</sumStat>
+  <sumStat type="mean">2.474225212989258</sumStat>
+  <sumStat type="stdev">1.0295147118123782</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Head</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Spouse/partner</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Child</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Other relative</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>Non-relative</labl>
+    <catStat type="mean"/>
+  </catgry>
+</var>
+<var ID="V53" name="sex" files="F2" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="12"/>
+  <labl>Sex</labl>
+  <sumStat type="vald">32396</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1.0</sumStat>
+  <sumStat type="max">2.0</sumStat>
+  <sumStat type="mean">1.505309297444129</sumStat>
+  <sumStat type="stdev">0.49997952731167966</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Male</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Female</labl>
+    <catStat type="invd"/>
+  </catgry>
+</var>
+<var ID="V54" name="age" files="F2" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="12"/>
+  <labl>Age in years</labl>
+  <sumStat type="vald">32396</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">100.0</sumStat>
+  <sumStat type="mean">28.136189653043587</sumStat>
+  <sumStat type="stdev">20.137273253293593</sumStat>
+  <catgry>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <catStat type="stdev"/>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+  </catgry>
+  <catgry>
+    <catValu>14</catValu>
+  </catgry>
+  <catgry>
+    <catValu>15</catValu>
+  </catgry>
+  <catgry>
+    <catValu>16</catValu>
+  </catgry>
+  <catgry>
+    <catValu>17</catValu>
+  </catgry>
+  <catgry>
+    <catValu>18</catValu>
+  </catgry>
+  <catgry>
+    <catValu>19</catValu>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+  </catgry>
+  <catgry>
+    <catValu>22</catValu>
+  </catgry>
+  <catgry>
+    <catValu>23</catValu>
+  </catgry>
+  <catgry>
+    <catValu>24</catValu>
+  </catgry>
+  <catgry>
+    <catValu>25</catValu>
+  </catgry>
+  <catgry>
+    <catValu>26</catValu>
+  </catgry>
+  <catgry>
+    <catValu>27</catValu>
+  </catgry>
+  <catgry>
+    <catValu>28</catValu>
+  </catgry>
+  <catgry>
+    <catValu>29</catValu>
+  </catgry>
+  <catgry>
+    <catValu>30</catValu>
+  </catgry>
+  <catgry>
+    <catValu>31</catValu>
+  </catgry>
+  <catgry>
+    <catValu>32</catValu>
+  </catgry>
+  <catgry>
+    <catValu>33</catValu>
+  </catgry>
+  <catgry>
+    <catValu>34</catValu>
+  </catgry>
+  <catgry>
+    <catValu>35</catValu>
+  </catgry>
+  <catgry>
+    <catValu>36</catValu>
+  </catgry>
+  <catgry>
+    <catValu>37</catValu>
+  </catgry>
+  <catgry>
+    <catValu>38</catValu>
+  </catgry>
+  <catgry>
+    <catValu>39</catValu>
+  </catgry>
+  <catgry>
+    <catValu>40</catValu>
+  </catgry>
+  <catgry>
+    <catValu>41</catValu>
+  </catgry>
+  <catgry>
+    <catValu>42</catValu>
+  </catgry>
+  <catgry>
+    <catValu>43</catValu>
+  </catgry>
+  <catgry>
+    <catValu>44</catValu>
+  </catgry>
+  <catgry>
+    <catValu>45</catValu>
+  </catgry>
+  <catgry>
+    <catValu>46</catValu>
+  </catgry>
+  <catgry>
+    <catValu>47</catValu>
+  </catgry>
+  <catgry>
+    <catValu>48</catValu>
+  </catgry>
+  <catgry>
+    <catValu>49</catValu>
+  </catgry>
+  <catgry>
+    <catValu>50</catValu>
+  </catgry>
+  <catgry>
+    <catValu>51</catValu>
+  </catgry>
+  <catgry>
+    <catValu>52</catValu>
+  </catgry>
+  <catgry>
+    <catValu>53</catValu>
+  </catgry>
+  <catgry>
+    <catValu>54</catValu>
+  </catgry>
+  <catgry>
+    <catValu>55</catValu>
+  </catgry>
+  <catgry>
+    <catValu>56</catValu>
+  </catgry>
+  <catgry>
+    <catValu>57</catValu>
+  </catgry>
+  <catgry>
+    <catValu>58</catValu>
+  </catgry>
+  <catgry>
+    <catValu>59</catValu>
+  </catgry>
+  <catgry>
+    <catValu>60</catValu>
+  </catgry>
+  <catgry>
+    <catValu>61</catValu>
+  </catgry>
+  <catgry>
+    <catValu>62</catValu>
+  </catgry>
+  <catgry>
+    <catValu>63</catValu>
+  </catgry>
+  <catgry>
+    <catValu>64</catValu>
+  </catgry>
+  <catgry>
+    <catValu>65</catValu>
+  </catgry>
+  <catgry>
+    <catValu>66</catValu>
+  </catgry>
+  <catgry>
+    <catValu>67</catValu>
+  </catgry>
+  <catgry>
+    <catValu>68</catValu>
+  </catgry>
+  <catgry>
+    <catValu>69</catValu>
+  </catgry>
+  <catgry>
+    <catValu>70</catValu>
+  </catgry>
+  <catgry>
+    <catValu>71</catValu>
+  </catgry>
+  <catgry>
+    <catValu>72</catValu>
+  </catgry>
+  <catgry>
+    <catValu>73</catValu>
+  </catgry>
+  <catgry>
+    <catValu>74</catValu>
+  </catgry>
+  <catgry>
+    <catValu>75</catValu>
+  </catgry>
+  <catgry>
+    <catValu>76</catValu>
+  </catgry>
+  <catgry>
+    <catValu>77</catValu>
+  </catgry>
+  <catgry>
+    <catValu>78</catValu>
+  </catgry>
+  <catgry>
+    <catValu>79</catValu>
+  </catgry>
+  <catgry>
+    <catValu>80</catValu>
+  </catgry>
+  <catgry>
+    <catValu>81</catValu>
+  </catgry>
+  <catgry>
+    <catValu>82</catValu>
+  </catgry>
+  <catgry>
+    <catValu>83</catValu>
+  </catgry>
+  <catgry>
+    <catValu>84</catValu>
+  </catgry>
+  <catgry>
+    <catValu>85</catValu>
+  </catgry>
+  <catgry>
+    <catValu>86</catValu>
+  </catgry>
+  <catgry>
+    <catValu>87</catValu>
+  </catgry>
+  <catgry>
+    <catValu>88</catValu>
+  </catgry>
+  <catgry>
+    <catValu>89</catValu>
+  </catgry>
+  <catgry>
+    <catValu>90</catValu>
+  </catgry>
+  <catgry>
+    <catValu>91</catValu>
+  </catgry>
+  <catgry>
+    <catValu>92</catValu>
+  </catgry>
+  <catgry>
+    <catValu>93</catValu>
+  </catgry>
+  <catgry>
+    <catValu>94</catValu>
+  </catgry>
+  <catgry>
+    <catValu>95</catValu>
+  </catgry>
+  <catgry>
+    <catValu>97</catValu>
+  </catgry>
+  <catgry>
+    <catValu>98</catValu>
+  </catgry>
+  <catgry>
+    <catValu>99</catValu>
+  </catgry>
+  <catgry>
+    <catValu>100</catValu>
+  </catgry>
+</var>
+<var ID="V55" name="age_month" files="F2" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="12"/>
+  <labl>Age in months</labl>
+  <sumStat type="vald">3165</sumStat>
+  <sumStat type="invd">29231</sumStat>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">59.0</sumStat>
+  <sumStat type="mean">30.35955766192733</sumStat>
+  <sumStat type="stdev">17.293287205097972</sumStat>
+  <catgry>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <catStat type="stdev"/>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+  </catgry>
+  <catgry>
+    <catValu>14</catValu>
+  </catgry>
+  <catgry>
+    <catValu>15</catValu>
+  </catgry>
+  <catgry>
+    <catValu>16</catValu>
+  </catgry>
+  <catgry>
+    <catValu>17</catValu>
+  </catgry>
+  <catgry>
+    <catValu>18</catValu>
+  </catgry>
+  <catgry>
+    <catValu>19</catValu>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+  </catgry>
+  <catgry>
+    <catValu>22</catValu>
+  </catgry>
+  <catgry>
+    <catValu>23</catValu>
+  </catgry>
+  <catgry>
+    <catValu>24</catValu>
+  </catgry>
+  <catgry>
+    <catValu>25</catValu>
+  </catgry>
+  <catgry>
+    <catValu>26</catValu>
+  </catgry>
+  <catgry>
+    <catValu>27</catValu>
+  </catgry>
+  <catgry>
+    <catValu>28</catValu>
+  </catgry>
+  <catgry>
+    <catValu>29</catValu>
+  </catgry>
+  <catgry>
+    <catValu>30</catValu>
+  </catgry>
+  <catgry>
+    <catValu>31</catValu>
+  </catgry>
+  <catgry>
+    <catValu>32</catValu>
+  </catgry>
+  <catgry>
+    <catValu>33</catValu>
+  </catgry>
+  <catgry>
+    <catValu>34</catValu>
+  </catgry>
+  <catgry>
+    <catValu>35</catValu>
+  </catgry>
+  <catgry>
+    <catValu>36</catValu>
+  </catgry>
+  <catgry>
+    <catValu>37</catValu>
+  </catgry>
+  <catgry>
+    <catValu>38</catValu>
+  </catgry>
+  <catgry>
+    <catValu>39</catValu>
+  </catgry>
+  <catgry>
+    <catValu>40</catValu>
+  </catgry>
+  <catgry>
+    <catValu>41</catValu>
+  </catgry>
+  <catgry>
+    <catValu>42</catValu>
+  </catgry>
+  <catgry>
+    <catValu>43</catValu>
+  </catgry>
+  <catgry>
+    <catValu>44</catValu>
+  </catgry>
+  <catgry>
+    <catValu>45</catValu>
+  </catgry>
+  <catgry>
+    <catValu>46</catValu>
+  </catgry>
+  <catgry>
+    <catValu>47</catValu>
+  </catgry>
+  <catgry>
+    <catValu>48</catValu>
+  </catgry>
+  <catgry>
+    <catValu>49</catValu>
+  </catgry>
+  <catgry>
+    <catValu>50</catValu>
+  </catgry>
+  <catgry>
+    <catValu>51</catValu>
+  </catgry>
+  <catgry>
+    <catValu>52</catValu>
+  </catgry>
+  <catgry>
+    <catValu>53</catValu>
+  </catgry>
+  <catgry>
+    <catValu>54</catValu>
+  </catgry>
+  <catgry>
+    <catValu>55</catValu>
+  </catgry>
+  <catgry>
+    <catValu>56</catValu>
+  </catgry>
+  <catgry>
+    <catValu>57</catValu>
+  </catgry>
+  <catgry>
+    <catValu>58</catValu>
+  </catgry>
+  <catgry>
+    <catValu>59</catValu>
+  </catgry>
+</var>
+<var ID="V56" name="marstat" files="F2" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="20"/>
+  <labl>Marital status</labl>
+  <sumStat type="vald">32396</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1.0</sumStat>
+  <sumStat type="max">4.0</sumStat>
+  <sumStat type="mean">1.591986665020373</sumStat>
+  <sumStat type="stdev">0.7214415038241251</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Single/never married</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Married/in union</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Divorced/separated</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Widowed</labl>
+    <catStat type="max"/>
+  </catgry>
+</var>
+<var ID="V57" name="religion" files="F2" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="12"/>
+  <labl>Religion</labl>
+  <sumStat type="vald">32396</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1.0</sumStat>
+  <sumStat type="max">7.0</sumStat>
+  <sumStat type="mean">5.772564514137548</sumStat>
+  <sumStat type="stdev">1.063477731177074</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>No religion</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Religion A</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Religion B</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>Religion D</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>Religion E</labl>
+    <catStat type="mean"/>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>Other</labl>
+    <catStat type="stdev"/>
+  </catgry>
+</var>
+<var ID="V58" name="school_attend" files="F2" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="34"/>
+  <labl>School attendance</labl>
+  <sumStat type="vald">32396</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1.0</sumStat>
+  <sumStat type="max">4.0</sumStat>
+  <sumStat type="mean">2.4047413260896406</sumStat>
+  <sumStat type="stdev">1.1510013857139794</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No, never attended</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>No, attended in the past</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>No, not specified if ever attended</labl>
+    <catStat type="max"/>
+  </catgry>
+</var>
+<var ID="V59" name="educ_attain" files="F2" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="37"/>
+  <labl>Education attainment</labl>
+  <sumStat type="vald">32396</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">4.0</sumStat>
+  <sumStat type="mean">1.4608284973453514</sumStat>
+  <sumStat type="stdev">0.8927222227056549</sumStat>
+  <catgry>
+    <labl>NIU (not in universe) or no education</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Less than primary</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Primary</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Secondary</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>University</labl>
+    <catStat type="mean"/>
+  </catgry>
+</var>
+<var ID="V60" name="yrs_school" files="F2" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="12"/>
+  <labl>Years of schooling</labl>
+  <sumStat type="vald">29854</sumStat>
+  <sumStat type="invd">2542</sumStat>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">18.0</sumStat>
+  <sumStat type="mean">4.63713405238829</sumStat>
+  <sumStat type="stdev">4.94214704133101</sumStat>
+  <catgry>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <catStat type="stdev"/>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+  </catgry>
+  <catgry>
+    <catValu>14</catValu>
+  </catgry>
+  <catgry>
+    <catValu>15</catValu>
+  </catgry>
+  <catgry>
+    <catValu>16</catValu>
+  </catgry>
+  <catgry>
+    <catValu>17</catValu>
+  </catgry>
+  <catgry>
+    <catValu>18</catValu>
+  </catgry>
+</var>
+<var ID="V61" name="literacy" files="F2" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="15"/>
+  <labl>Literacy status</labl>
+  <sumStat type="vald">32396</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">2.0</sumStat>
+  <sumStat type="mean">1.0620755648845537</sumStat>
+  <sumStat type="stdev">0.5036114684552561</sumStat>
+  <catgry>
+    <labl>Not in universe</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="min"/>
+  </catgry>
+</var>
+<var ID="V62" name="act_status" files="F2" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="21"/>
+  <labl>Activity status</labl>
+  <sumStat type="vald">32396</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">3.0</sumStat>
+  <sumStat type="mean">1.524817878750463</sumStat>
+  <sumStat type="stdev">1.1759151979304083</sumStat>
+  <catgry>
+    <labl>NIU (not in universe)</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Employed</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Unemployed</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Inactive</labl>
+    <catStat type="max"/>
+  </catgry>
+</var>
+<var ID="V63" name="labor_force" files="F2" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="15"/>
+  <labl>Labor force status</labl>
+  <sumStat type="vald">32396</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">2.0</sumStat>
+  <sumStat type="mean">0.9504259785158662</sumStat>
+  <sumStat type="stdev">0.757539337094013</sumStat>
+  <catgry>
+    <labl>Not in universe</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="min"/>
+  </catgry>
+</var>
+<var ID="V64" name="occupation" files="F2" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="39"/>
+  <labl>Main occupation</labl>
+  <sumStat type="vald">32396</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">11.0</sumStat>
+  <sumStat type="mean">2.369088776392147</sumStat>
+  <sumStat type="stdev">3.1798476293927393</sumStat>
+  <catgry>
+    <labl>Not in universe</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Legislators, senior officials and manag</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Professionals</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Technicians and associate professionals</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Clerks</labl>
+    <catStat type="mean"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>Service workers and shop and market sal</labl>
+    <catStat type="stdev"/>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>Skilled agricultural and fishery worker</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>Crafts and related trades workers</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>Plant and machine operators and assembl</labl>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+    <labl>Elementary occupations</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>Armed forces</labl>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>Other occupations, unspecified or n.e.c</labl>
+  </catgry>
+</var>
+<var ID="V65" name="industry" files="F2" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="39"/>
+  <labl>Industry of main occupation</labl>
+  <sumStat type="vald">32396</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">15.0</sumStat>
+  <sumStat type="mean">2.1972157056426718</sumStat>
+  <sumStat type="stdev">3.941558679441478</sumStat>
+  <catgry>
+    <labl>NIU (not in universe)</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Agriculture, fishing, and forestry</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Mining and extraction</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Manufacturing</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Electricity, gas, water and waste manag</labl>
+    <catStat type="mean"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>Construction</labl>
+    <catStat type="stdev"/>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>Wholesale and retail trade</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>Hotels and restaurants</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>Transportation, storage, and communicat</labl>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+    <labl>Financial services and insurance</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>Public administration and defense</labl>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>Business services and real estate</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>Education</labl>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+    <labl>Health and social work</labl>
+  </catgry>
+  <catgry>
+    <catValu>14</catValu>
+    <labl>Other services</labl>
+  </catgry>
+  <catgry>
+    <catValu>15</catValu>
+    <labl>Private household services</labl>
+  </catgry>
+</var>
+<var ID="V66" name="migrate_recent" files="F2" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="39"/>
+  <labl>Recent migration</labl>
+  <sumStat type="vald">32396</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">99.0</sumStat>
+  <sumStat type="mean">31.718885047536734</sumStat>
+  <sumStat type="stdev">33.97499552036734</sumStat>
+  <catgry>
+    <labl>NIU (not in universe)</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>Same major administrative unit</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>Same major, same minor administrative u</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>Same major, different minor administrat</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+    <labl>Different major administrative unit</labl>
+    <catStat type="mean"/>
+  </catgry>
+  <catgry>
+    <catValu>30</catValu>
+    <labl>Abroad</labl>
+    <catStat type="stdev"/>
+  </catgry>
+  <catgry>
+    <catValu>99</catValu>
+    <labl>Unknown/missing</labl>
+  </catgry>
+</var>
+<var ID="V67" name="disability" files="F2" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="14"/>
+  <labl>Has a disability</labl>
+  <sumStat type="vald">32396</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">1.0</sumStat>
+  <sumStat type="mean">0.03910976663785653</sumStat>
+  <sumStat type="stdev">0.19385910567446743</sumStat>
+  <catgry>
+    <labl>No disability</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Has disability</labl>
+    <catStat type="invd"/>
+  </catgry>
+</var>
+<var ID="V68" name="blind" files="F2" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="12"/>
+  <labl>Blind</labl>
+  <sumStat type="vald">32396</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">1.0</sumStat>
+  <sumStat type="mean">0.02623780713668354</sumStat>
+  <sumStat type="stdev">0.15984421571112786</sumStat>
+  <catgry>
+    <labl>No</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="invd"/>
+  </catgry>
+</var>
+<var ID="V69" name="deaf" files="F2" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="12"/>
+  <labl>Deaf</labl>
+  <sumStat type="vald">32396</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">1.0</sumStat>
+  <sumStat type="mean">0.008766514384491912</sumStat>
+  <sumStat type="stdev">0.09321979859931513</sumStat>
+  <catgry>
+    <labl>No</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="invd"/>
+  </catgry>
+</var>
+<var ID="V70" name="mental" files="F2" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="12"/>
+  <labl>Mental disability</labl>
+  <sumStat type="vald">32396</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">1.0</sumStat>
+  <sumStat type="mean">0.007809606124212866</sumStat>
+  <sumStat type="stdev">0.08802758299607054</sumStat>
+  <catgry>
+    <labl>No</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="invd"/>
+  </catgry>
+</var>
+<var ID="V71" name="ch_weight" files="F2" intrvl="contin">
+  <varFormat type="numeric"/>
+  <location width="10"/>
+  <labl>Child weight (for 0 to 59 months)</labl>
+  <sumStat type="vald">3165</sumStat>
+  <sumStat type="invd">29231</sumStat>
+  <sumStat type="min">4.77</sumStat>
+  <sumStat type="max">18.59</sumStat>
+  <sumStat type="mean">11.933210110584529</sumStat>
+  <sumStat type="stdev">2.8981693176170085</sumStat>
+</var>
+<var ID="V72" name="ch_height" files="F2" intrvl="contin">
+  <varFormat type="numeric"/>
+  <location width="10"/>
+  <labl>Child height (for 0 to 59 months)</labl>
+  <sumStat type="vald">3165</sumStat>
+  <sumStat type="invd">29231</sumStat>
+  <sumStat type="min">48.4</sumStat>
+  <sumStat type="max">108.8</sumStat>
+  <sumStat type="mean">86.18597156398108</sumStat>
+  <sumStat type="stdev">12.650298402178995</sumStat>
+</var>
+<var ID="V73" name="children_born" files="F2" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="12"/>
+  <labl>Number of children ever born</labl>
+  <sumStat type="vald">11623</sumStat>
+  <sumStat type="invd">20773</sumStat>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">18.0</sumStat>
+  <sumStat type="mean">2.2937279531962487</sumStat>
+  <sumStat type="stdev">2.669148079177291</sumStat>
+  <catgry>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <catStat type="stdev"/>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+  </catgry>
+  <catgry>
+    <catValu>14</catValu>
+  </catgry>
+  <catgry>
+    <catValu>15</catValu>
+  </catgry>
+  <catgry>
+    <catValu>16</catValu>
+  </catgry>
+  <catgry>
+    <catValu>18</catValu>
+  </catgry>
+</var>
+<var ID="V74" name="children_surv" files="F2" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="12"/>
+  <labl>Number of surviving children</labl>
+  <sumStat type="vald">7715</sumStat>
+  <sumStat type="invd">24681</sumStat>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">15.0</sumStat>
+  <sumStat type="mean">3.1147116007777056</sumStat>
+  <sumStat type="stdev">2.1942095123637304</sumStat>
+  <catgry>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <catStat type="stdev"/>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+  </catgry>
+  <catgry>
+    <catValu>14</catValu>
+  </catgry>
+  <catgry>
+    <catValu>15</catValu>
+  </catgry>
+</var>
+<var ID="V75" name="births_12m" files="F2" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="12"/>
+  <labl>Number of births in past 12 months</labl>
+  <sumStat type="vald">11320</sumStat>
+  <sumStat type="invd">21076</sumStat>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">2.0</sumStat>
+  <sumStat type="mean">0.047968197879858655</sumStat>
+  <sumStat type="stdev">0.21453361635478582</sumStat>
+  <catgry>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <catStat type="min"/>
+  </catgry>
+</var>
+<var ID="V76" name="hhweight" files="F2" intrvl="contin">
+  <varFormat type="numeric"/>
+  <location width="12"/>
+  <labl>Household weight</labl>
+  <sumStat type="vald">32396</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">156.66755315036724</sumStat>
+  <sumStat type="max">552.2308512356647</sumStat>
+  <sumStat type="mean">310.97503364852963</sumStat>
+  <sumStat type="stdev">70.74169260405742</sumStat>
+</var>
+<var ID="V77" name="hid" files="F3" intrvl="contin">
+  <varFormat type="character"/>
+  <location width="12"/>
+  <labl>Unique household identifier</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">None</sumStat>
+  <sumStat type="max">None</sumStat>
+  <sumStat type="mean">None</sumStat>
+  <sumStat type="stdev">None</sumStat>
+</var>
+<var ID="V78" name="geo1" files="F3" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="12"/>
+  <labl>Geographic area - Admin 1</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1.0</sumStat>
+  <sumStat type="max">10.0</sumStat>
+  <sumStat type="mean">5.18125</sumStat>
+  <sumStat type="stdev">3.03410599063304</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>geo_01</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>geo_02</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>geo_03</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>geo_04</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>geo_05</labl>
+    <catStat type="mean"/>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>geo_06</labl>
+    <catStat type="stdev"/>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>geo_07</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>geo_08</labl>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+    <labl>geo_09</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>geo_10</labl>
+  </catgry>
+</var>
+<var ID="V79" name="geo2" files="F3" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="9"/>
+  <labl>Geographic area - Admin 2</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">11.0</sumStat>
+  <sumStat type="max">109.0</sumStat>
+  <sumStat type="mean">55.675</sumStat>
+  <sumStat type="stdev">30.72661534584189</sumStat>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>geo_01_01</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>geo_01_02</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+    <labl>geo_01_03</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>14</catValu>
+    <labl>geo_01_04</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>15</catValu>
+    <labl>geo_01_05</labl>
+    <catStat type="mean"/>
+  </catgry>
+  <catgry>
+    <catValu>16</catValu>
+    <labl>geo_01_06</labl>
+    <catStat type="stdev"/>
+  </catgry>
+  <catgry>
+    <catValu>17</catValu>
+    <labl>geo_01_07</labl>
+  </catgry>
+  <catgry>
+    <catValu>18</catValu>
+    <labl>geo_01_08</labl>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+    <labl>geo_02_01</labl>
+  </catgry>
+  <catgry>
+    <catValu>23</catValu>
+    <labl>geo_02_03</labl>
+  </catgry>
+  <catgry>
+    <catValu>24</catValu>
+    <labl>geo_02_04</labl>
+  </catgry>
+  <catgry>
+    <catValu>25</catValu>
+    <labl>geo_02_05</labl>
+  </catgry>
+  <catgry>
+    <catValu>26</catValu>
+    <labl>geo_02_06</labl>
+  </catgry>
+  <catgry>
+    <catValu>27</catValu>
+    <labl>geo_02_07</labl>
+  </catgry>
+  <catgry>
+    <catValu>28</catValu>
+    <labl>geo_02_08</labl>
+  </catgry>
+  <catgry>
+    <catValu>31</catValu>
+    <labl>geo_03_01</labl>
+  </catgry>
+  <catgry>
+    <catValu>32</catValu>
+    <labl>geo_03_02</labl>
+  </catgry>
+  <catgry>
+    <catValu>33</catValu>
+    <labl>geo_03_03</labl>
+  </catgry>
+  <catgry>
+    <catValu>34</catValu>
+    <labl>geo_03_04</labl>
+  </catgry>
+  <catgry>
+    <catValu>35</catValu>
+    <labl>geo_03_05</labl>
+  </catgry>
+  <catgry>
+    <catValu>41</catValu>
+    <labl>geo_04_01</labl>
+  </catgry>
+  <catgry>
+    <catValu>42</catValu>
+    <labl>geo_04_02</labl>
+  </catgry>
+  <catgry>
+    <catValu>43</catValu>
+    <labl>geo_04_03</labl>
+  </catgry>
+  <catgry>
+    <catValu>44</catValu>
+    <labl>geo_04_04</labl>
+  </catgry>
+  <catgry>
+    <catValu>51</catValu>
+    <labl>geo_05_01</labl>
+  </catgry>
+  <catgry>
+    <catValu>52</catValu>
+    <labl>geo_05_02</labl>
+  </catgry>
+  <catgry>
+    <catValu>53</catValu>
+    <labl>geo_05_03</labl>
+  </catgry>
+  <catgry>
+    <catValu>54</catValu>
+    <labl>geo_05_04</labl>
+  </catgry>
+  <catgry>
+    <catValu>55</catValu>
+    <labl>geo_05_05</labl>
+  </catgry>
+  <catgry>
+    <catValu>56</catValu>
+    <labl>geo_05_06</labl>
+  </catgry>
+  <catgry>
+    <catValu>57</catValu>
+    <labl>geo_05_07</labl>
+  </catgry>
+  <catgry>
+    <catValu>61</catValu>
+    <labl>geo_06_01</labl>
+  </catgry>
+  <catgry>
+    <catValu>62</catValu>
+    <labl>geo_06_02</labl>
+  </catgry>
+  <catgry>
+    <catValu>63</catValu>
+    <labl>geo_06_03</labl>
+  </catgry>
+  <catgry>
+    <catValu>64</catValu>
+    <labl>geo_06_04</labl>
+  </catgry>
+  <catgry>
+    <catValu>71</catValu>
+    <labl>geo_07_01</labl>
+  </catgry>
+  <catgry>
+    <catValu>72</catValu>
+    <labl>geo_07_02</labl>
+  </catgry>
+  <catgry>
+    <catValu>73</catValu>
+    <labl>geo_07_03</labl>
+  </catgry>
+  <catgry>
+    <catValu>74</catValu>
+    <labl>geo_07_04</labl>
+  </catgry>
+  <catgry>
+    <catValu>81</catValu>
+    <labl>geo_08_01</labl>
+  </catgry>
+  <catgry>
+    <catValu>82</catValu>
+    <labl>geo_08_02</labl>
+  </catgry>
+  <catgry>
+    <catValu>83</catValu>
+    <labl>geo_08_03</labl>
+  </catgry>
+  <catgry>
+    <catValu>84</catValu>
+    <labl>geo_08_04</labl>
+  </catgry>
+  <catgry>
+    <catValu>91</catValu>
+    <labl>geo_09_01</labl>
+  </catgry>
+  <catgry>
+    <catValu>92</catValu>
+    <labl>geo_09_02</labl>
+  </catgry>
+  <catgry>
+    <catValu>94</catValu>
+    <labl>geo_09_04</labl>
+  </catgry>
+  <catgry>
+    <catValu>95</catValu>
+    <labl>geo_09_05</labl>
+  </catgry>
+  <catgry>
+    <catValu>96</catValu>
+    <labl>geo_09_06</labl>
+  </catgry>
+  <catgry>
+    <catValu>97</catValu>
+    <labl>geo_09_07</labl>
+  </catgry>
+  <catgry>
+    <catValu>98</catValu>
+    <labl>geo_09_08</labl>
+  </catgry>
+  <catgry>
+    <catValu>101</catValu>
+    <labl>geo_10_01</labl>
+  </catgry>
+  <catgry>
+    <catValu>102</catValu>
+    <labl>geo_10_02</labl>
+  </catgry>
+  <catgry>
+    <catValu>103</catValu>
+    <labl>geo_10_03</labl>
+  </catgry>
+  <catgry>
+    <catValu>104</catValu>
+    <labl>geo_10_04</labl>
+  </catgry>
+  <catgry>
+    <catValu>105</catValu>
+    <labl>geo_10_05</labl>
+  </catgry>
+  <catgry>
+    <catValu>106</catValu>
+    <labl>geo_10_06</labl>
+  </catgry>
+  <catgry>
+    <catValu>107</catValu>
+    <labl>geo_10_07</labl>
+  </catgry>
+  <catgry>
+    <catValu>108</catValu>
+    <labl>geo_10_08</labl>
+  </catgry>
+  <catgry>
+    <catValu>109</catValu>
+    <labl>geo_10_09</labl>
+  </catgry>
+</var>
+<var ID="V80" name="ea" files="F3" intrvl="contin">
+  <varFormat type="numeric"/>
+  <location width="9"/>
+  <labl>Enumeration area</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">11003.0</sumStat>
+  <sumStat type="max">109046.0</sumStat>
+  <sumStat type="mean">55737.375</sumStat>
+  <sumStat type="stdev">30722.82758513982</sumStat>
+</var>
+<var ID="V81" name="urbrur" files="F3" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="12"/>
+  <labl>Residence (urban/rural)</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1.0</sumStat>
+  <sumStat type="max">2.0</sumStat>
+  <sumStat type="mean">1.55625</sumStat>
+  <sumStat type="stdev">0.4968569168779692</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Rural</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Urban</labl>
+    <catStat type="invd"/>
+  </catgry>
+</var>
+<var ID="V82" name="hhsize" files="F3" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="12"/>
+  <labl>Household size</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1.0</sumStat>
+  <sumStat type="max">22.0</sumStat>
+  <sumStat type="mean">4.0495</sumStat>
+  <sumStat type="stdev">2.1350338512991485</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <catStat type="stdev"/>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+  </catgry>
+  <catgry>
+    <catValu>14</catValu>
+  </catgry>
+  <catgry>
+    <catValu>15</catValu>
+  </catgry>
+  <catgry>
+    <catValu>16</catValu>
+  </catgry>
+  <catgry>
+    <catValu>17</catValu>
+  </catgry>
+  <catgry>
+    <catValu>18</catValu>
+  </catgry>
+  <catgry>
+    <catValu>22</catValu>
+  </catgry>
+</var>
+<var ID="V83" name="statocc" files="F3" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="17"/>
+  <labl>Status of occupancy of the dwelling</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1.0</sumStat>
+  <sumStat type="max">3.0</sumStat>
+  <sumStat type="mean">1.325625</sumStat>
+  <sumStat type="stdev">0.6462550309828418</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Owned</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Rented</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Occupied for free</labl>
+    <catStat type="min"/>
+  </catgry>
+</var>
+<var ID="V84" name="rooms" files="F3" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="12"/>
+  <labl>Number of rooms in dwelling</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1.0</sumStat>
+  <sumStat type="max">20.0</sumStat>
+  <sumStat type="mean">2.81275</sumStat>
+  <sumStat type="stdev">1.6506144321132168</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <catStat type="stdev"/>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+  </catgry>
+  <catgry>
+    <catValu>14</catValu>
+  </catgry>
+  <catgry>
+    <catValu>15</catValu>
+  </catgry>
+  <catgry>
+    <catValu>16</catValu>
+  </catgry>
+  <catgry>
+    <catValu>18</catValu>
+  </catgry>
+  <catgry>
+    <catValu>19</catValu>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+  </catgry>
+</var>
+<var ID="V85" name="bedrooms" files="F3" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="12"/>
+  <labl>Number of bedrooms in dwelling</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">13.0</sumStat>
+  <sumStat type="mean">1.68225</sumStat>
+  <sumStat type="stdev">0.8928239352315861</sumStat>
+  <catgry>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <catStat type="stdev"/>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+  </catgry>
+</var>
+<var ID="V86" name="floor" files="F3" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="15"/>
+  <labl>Main material of the floor</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1.0</sumStat>
+  <sumStat type="max">6.0</sumStat>
+  <sumStat type="mean">2.413</sumStat>
+  <sumStat type="stdev">1.671161302062787</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Earth</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Cement/concrete</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Tile</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>Wood</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>Other</labl>
+    <catStat type="mean"/>
+  </catgry>
+</var>
+<var ID="V87" name="walls" files="F3" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="18"/>
+  <labl>Main materials of the walls</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1.0</sumStat>
+  <sumStat type="max">8.0</sumStat>
+  <sumStat type="mean">3.3245</sumStat>
+  <sumStat type="stdev">1.1693462581006178</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Cardboard, scrap</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Wood or straw</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Bricks</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Concrete or cement</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>Adobe or mud</labl>
+    <catStat type="mean"/>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>Stone</labl>
+    <catStat type="stdev"/>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>Metal</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>Other</labl>
+  </catgry>
+</var>
+<var ID="V88" name="roof" files="F3" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="18"/>
+  <labl>Main materials of the roof</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1.0</sumStat>
+  <sumStat type="max">9.0</sumStat>
+  <sumStat type="mean">3.659125</sumStat>
+  <sumStat type="stdev">2.5437154018051378</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Concrete or cement</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Tile</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Asphalt/laminate</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Slate</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>Metal</labl>
+    <catStat type="mean"/>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>Wood</labl>
+    <catStat type="stdev"/>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>Thatch</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>Scrap</labl>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+    <labl>Other</labl>
+  </catgry>
+</var>
+<var ID="V89" name="water" files="F3" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="39"/>
+  <labl>Main source of drinking water</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">11.0</sumStat>
+  <sumStat type="max">96.0</sumStat>
+  <sumStat type="mean">22.66725</sumStat>
+  <sumStat type="stdev">18.88549337904682</sumStat>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>Piped into dwelling</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>Piped to yard/plot</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+    <labl>Piped to neighbor</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>14</catValu>
+    <labl>Public tap/standpipe</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+    <labl>Tube well or borehole</labl>
+    <catStat type="mean"/>
+  </catgry>
+  <catgry>
+    <catValu>31</catValu>
+    <labl>Protected well</labl>
+    <catStat type="stdev"/>
+  </catgry>
+  <catgry>
+    <catValu>32</catValu>
+    <labl>Unprotected well</labl>
+  </catgry>
+  <catgry>
+    <catValu>41</catValu>
+    <labl>Protected spring</labl>
+  </catgry>
+  <catgry>
+    <catValu>42</catValu>
+    <labl>Unprotected spring</labl>
+  </catgry>
+  <catgry>
+    <catValu>43</catValu>
+    <labl>River/dam/lake/ponds/stream/canal/irrig</labl>
+  </catgry>
+  <catgry>
+    <catValu>51</catValu>
+    <labl>Rainwater</labl>
+  </catgry>
+  <catgry>
+    <catValu>61</catValu>
+    <labl>Tanker truck</labl>
+  </catgry>
+  <catgry>
+    <catValu>62</catValu>
+    <labl>Cart with small tank</labl>
+  </catgry>
+  <catgry>
+    <catValu>71</catValu>
+    <labl>Bottled water</labl>
+  </catgry>
+  <catgry>
+    <catValu>96</catValu>
+    <labl>Other</labl>
+  </catgry>
+</var>
+<var ID="V90" name="piped_water" files="F3" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="26"/>
+  <labl>Piped water</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">3.0</sumStat>
+  <sumStat type="mean">0.64525</sumStat>
+  <sumStat type="stdev">0.6065875295898209</sumStat>
+  <catgry>
+    <labl>No piped water</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Piped into dwelling</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Piped outside the dwelling</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Public piped water</labl>
+    <catStat type="max"/>
+  </catgry>
+</var>
+<var ID="V91" name="toilet" files="F3" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="37"/>
+  <labl>Toilet facility</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">11.0</sumStat>
+  <sumStat type="max">96.0</sumStat>
+  <sumStat type="mean">21.050875</sumStat>
+  <sumStat type="stdev">15.425993708497739</sumStat>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>Flush to piped sewer system</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>Flush to septic tank</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+    <labl>Flush to pit latrine</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>14</catValu>
+    <labl>Flush to somewhere else</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+    <labl>Ventilated improved pit latrine (vip)</labl>
+    <catStat type="mean"/>
+  </catgry>
+  <catgry>
+    <catValu>22</catValu>
+    <labl>Pit latrine with slab</labl>
+    <catStat type="stdev"/>
+  </catgry>
+  <catgry>
+    <catValu>23</catValu>
+    <labl>Pit latrine without slab/open pit</labl>
+  </catgry>
+  <catgry>
+    <catValu>31</catValu>
+    <labl>No facility/bush/field</labl>
+  </catgry>
+  <catgry>
+    <catValu>96</catValu>
+    <labl>Other</labl>
+  </catgry>
+</var>
+<var ID="V92" name="flush_toilet" files="F3" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="28"/>
+  <labl>Flush toilet</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">2.0</sumStat>
+  <sumStat type="mean">1.116625</sumStat>
+  <sumStat type="stdev">0.7213450295846389</sumStat>
+  <catgry>
+    <labl>No toilet</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Flush toilet</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Toilet/latrine with no flush</labl>
+    <catStat type="min"/>
+  </catgry>
+</var>
+<var ID="V93" name="electricity" files="F3" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="12"/>
+  <labl>Electricity</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">1.0</sumStat>
+  <sumStat type="mean">0.831</sumStat>
+  <sumStat type="stdev">0.374775342131301</sumStat>
+  <catgry>
+    <labl>No</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="invd"/>
+  </catgry>
+</var>
+<var ID="V94" name="cook_fuel" files="F3" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="13"/>
+  <labl>Fuel for cooking</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1.0</sumStat>
+  <sumStat type="max">6.0</sumStat>
+  <sumStat type="mean">2.902125</sumStat>
+  <sumStat type="stdev">1.222490202276416</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Electricity</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Gas</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Petroleum</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Wood</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>Coal/charcoal</labl>
+    <catStat type="mean"/>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>Other</labl>
+    <catStat type="stdev"/>
+  </catgry>
+</var>
+<var ID="V95" name="phone" files="F3" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="12"/>
+  <labl>Ownership of a phone (landline)</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">1.0</sumStat>
+  <sumStat type="mean">0.225</sumStat>
+  <sumStat type="stdev">0.41760842855472885</sumStat>
+  <catgry>
+    <labl>No</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="invd"/>
+  </catgry>
+</var>
+<var ID="V96" name="cell" files="F3" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="12"/>
+  <labl>Ownership of a cellphone</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">1.0</sumStat>
+  <sumStat type="mean">0.631125</sumStat>
+  <sumStat type="stdev">0.4825301428847208</sumStat>
+  <catgry>
+    <labl>No</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="invd"/>
+  </catgry>
+</var>
+<var ID="V97" name="car" files="F3" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="12"/>
+  <labl>Ownership of a car</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">1.0</sumStat>
+  <sumStat type="mean">0.245125</sumStat>
+  <sumStat type="stdev">0.43018817639306234</sumStat>
+  <catgry>
+    <labl>No</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="invd"/>
+  </catgry>
+</var>
+<var ID="V98" name="bicycle" files="F3" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="12"/>
+  <labl>Ownership of a bicycle</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">1.0</sumStat>
+  <sumStat type="mean">0.146625</sumStat>
+  <sumStat type="stdev">0.3537538015258801</sumStat>
+  <catgry>
+    <labl>No</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="invd"/>
+  </catgry>
+</var>
+<var ID="V99" name="motorcycle" files="F3" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="12"/>
+  <labl>Ownership of a motorcycle</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">1.0</sumStat>
+  <sumStat type="mean">0.244125</sumStat>
+  <sumStat type="stdev">0.42959405635629677</sumStat>
+  <catgry>
+    <labl>No</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="invd"/>
+  </catgry>
+</var>
+<var ID="V100" name="refrigerator" files="F3" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="12"/>
+  <labl>Ownership of a refrigerator</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">1.0</sumStat>
+  <sumStat type="mean">0.618125</sumStat>
+  <sumStat type="stdev">0.4858765212214254</sumStat>
+  <catgry>
+    <labl>No</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="invd"/>
+  </catgry>
+</var>
+<var ID="V101" name="tv" files="F3" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="12"/>
+  <labl>Ownership of a television</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">1.0</sumStat>
+  <sumStat type="mean">0.697375</sumStat>
+  <sumStat type="stdev">0.45942300014434706</sumStat>
+  <catgry>
+    <labl>No</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="invd"/>
+  </catgry>
+</var>
+<var ID="V102" name="radio" files="F3" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="12"/>
+  <labl>Ownership of a radio</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">1.0</sumStat>
+  <sumStat type="mean">0.672625</sumStat>
+  <sumStat type="stdev">0.46928470877734396</sumStat>
+  <catgry>
+    <labl>No</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="invd"/>
+  </catgry>
+</var>
+<var ID="V103" name="bank" files="F3" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="12"/>
+  <labl>Any member has a bank account</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">1.0</sumStat>
+  <sumStat type="mean">0.574625</sumStat>
+  <sumStat type="stdev">0.49443064941747433</sumStat>
+  <catgry>
+    <labl>No</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="invd"/>
+  </catgry>
+</var>
+<var ID="V104" name="deaths_12m" files="F3" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="12"/>
+  <labl>Number of deaths in the past 12 months</labl>
+  <sumStat type="vald">7922</sumStat>
+  <sumStat type="invd">78</sumStat>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">7.0</sumStat>
+  <sumStat type="mean">0.08394344862408483</sumStat>
+  <sumStat type="stdev">0.41454090501686736</sumStat>
+  <catgry>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <catStat type="stdev"/>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+  </catgry>
+</var>
+<var ID="V105" name="exp_01" files="F3" intrvl="contin">
+  <varFormat type="numeric"/>
+  <location width="9"/>
+  <labl>Food and non-alcoholic beverages</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">409.0</sumStat>
+  <sumStat type="max">18397.0</sumStat>
+  <sumStat type="mean">3774.062125</sumStat>
+  <sumStat type="stdev">1742.0404214940734</sumStat>
+</var>
+<var ID="V106" name="exp_02" files="F3" intrvl="contin">
+  <varFormat type="numeric"/>
+  <location width="9"/>
+  <labl>Alcoholic beverages, tobacco and narcotics</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">1084.0</sumStat>
+  <sumStat type="mean">93.32925</sumStat>
+  <sumStat type="stdev">87.84696341115081</sumStat>
+</var>
+<var ID="V107" name="exp_03" files="F3" intrvl="contin">
+  <varFormat type="numeric"/>
+  <location width="9"/>
+  <labl>Clothing and footwear</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">24.0</sumStat>
+  <sumStat type="max">3755.0</sumStat>
+  <sumStat type="mean">663.703</sumStat>
+  <sumStat type="stdev">446.7761549787345</sumStat>
+</var>
+<var ID="V108" name="exp_04" files="F3" intrvl="contin">
+  <varFormat type="numeric"/>
+  <location width="9"/>
+  <labl>Housing, water, electricity, gas and other fuels</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">121.0</sumStat>
+  <sumStat type="max">24552.0</sumStat>
+  <sumStat type="mean">3083.725125</sumStat>
+  <sumStat type="stdev">2328.1393596987505</sumStat>
+</var>
+<var ID="V109" name="exp_05" files="F3" intrvl="contin">
+  <varFormat type="numeric"/>
+  <location width="9"/>
+  <labl>Furnishing, household equipment and routine household maintenance</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">27.0</sumStat>
+  <sumStat type="max">5139.0</sumStat>
+  <sumStat type="mean">549.5975</sumStat>
+  <sumStat type="stdev">532.6268958379977</sumStat>
+</var>
+<var ID="V110" name="exp_06" files="F3" intrvl="contin">
+  <varFormat type="numeric"/>
+  <location width="9"/>
+  <labl>Health</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">13.0</sumStat>
+  <sumStat type="max">1968.0</sumStat>
+  <sumStat type="mean">288.231</sumStat>
+  <sumStat type="stdev">238.62204151929754</sumStat>
+</var>
+<var ID="V111" name="exp_07" files="F3" intrvl="contin">
+  <varFormat type="numeric"/>
+  <location width="9"/>
+  <labl>Transport</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">14.0</sumStat>
+  <sumStat type="max">14035.0</sumStat>
+  <sumStat type="mean">1167.769625</sumStat>
+  <sumStat type="stdev">1441.88522477607</sumStat>
+</var>
+<var ID="V112" name="exp_08" files="F3" intrvl="contin">
+  <varFormat type="numeric"/>
+  <location width="9"/>
+  <labl>Communication</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">4545.0</sumStat>
+  <sumStat type="mean">497.435875</sumStat>
+  <sumStat type="stdev">571.4084570962259</sumStat>
+</var>
+<var ID="V113" name="exp_09" files="F3" intrvl="contin">
+  <varFormat type="numeric"/>
+  <location width="9"/>
+  <labl>Recreation and culture</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">2.0</sumStat>
+  <sumStat type="max">3984.0</sumStat>
+  <sumStat type="mean">330.275875</sumStat>
+  <sumStat type="stdev">363.67496057964104</sumStat>
+</var>
+<var ID="V114" name="exp_10" files="F3" intrvl="contin">
+  <varFormat type="numeric"/>
+  <location width="9"/>
+  <labl>Education</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">0.0</sumStat>
+  <sumStat type="max">7410.0</sumStat>
+  <sumStat type="mean">568.147375</sumStat>
+  <sumStat type="stdev">721.6434064386416</sumStat>
+</var>
+<var ID="V115" name="exp_11" files="F3" intrvl="contin">
+  <varFormat type="numeric"/>
+  <location width="9"/>
+  <labl>Catering and accommodation services</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">7.0</sumStat>
+  <sumStat type="max">3274.0</sumStat>
+  <sumStat type="mean">354.233</sumStat>
+  <sumStat type="stdev">309.5933271479326</sumStat>
+</var>
+<var ID="V116" name="exp_12" files="F3" intrvl="contin">
+  <varFormat type="numeric"/>
+  <location width="9"/>
+  <labl>Miscellaneous goods and services</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">10.0</sumStat>
+  <sumStat type="max">6765.0</sumStat>
+  <sumStat type="mean">706.64225</sumStat>
+  <sumStat type="stdev">545.6413742822327</sumStat>
+</var>
+<var ID="V117" name="tot_exp" files="F3" intrvl="contin">
+  <varFormat type="numeric"/>
+  <location width="9"/>
+  <labl>Total annual household expenditure</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1421.0</sumStat>
+  <sumStat type="max">76247.0</sumStat>
+  <sumStat type="mean">12077.152</sumStat>
+  <sumStat type="stdev">7381.022407896431</sumStat>
+</var>
+<var ID="V118" name="tot_food" files="F3" intrvl="contin">
+  <varFormat type="numeric"/>
+  <location width="9"/>
+  <labl>Total annual food expenditure</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">409.0</sumStat>
+  <sumStat type="max">18397.0</sumStat>
+  <sumStat type="mean">3774.062125</sumStat>
+  <sumStat type="stdev">1742.0404214940734</sumStat>
+</var>
+<var ID="V119" name="share_food" files="F3" intrvl="contin">
+  <varFormat type="numeric"/>
+  <location width="9"/>
+  <labl>Share of food in household expenditure</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">0.07900000363588333</sumStat>
+  <sumStat type="max">0.828000009059906</sumStat>
+  <sumStat type="mean">0.36437562488112596</sumStat>
+  <sumStat type="stdev">0.16625661684903908</sumStat>
+</var>
+<var ID="V120" name="pc_exp" files="F3" intrvl="contin">
+  <varFormat type="numeric"/>
+  <location width="9"/>
+  <labl>Total annual per capita expenditure</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">528.625</sumStat>
+  <sumStat type="max">34938.5</sumStat>
+  <sumStat type="mean">3665.114229598999</sumStat>
+  <sumStat type="stdev">2863.9575761959445</sumStat>
+</var>
+<var ID="V121" name="quint_nat" files="F3" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="8"/>
+  <labl>Per capita expenditure quintiles, national</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">1.0</sumStat>
+  <sumStat type="max">5.0</sumStat>
+  <sumStat type="mean">3.38525</sumStat>
+  <sumStat type="stdev">1.3761610243338576</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>poorest</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>poor</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>average</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>rich</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>richest</labl>
+    <catStat type="mean"/>
+  </catgry>
+</var>
+<var ID="V122" name="quint_urb" files="F3" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="8"/>
+  <labl>Per capita expenditure quintiles, urban</labl>
+  <sumStat type="vald">4450</sumStat>
+  <sumStat type="invd">3550</sumStat>
+  <sumStat type="min">1.0</sumStat>
+  <sumStat type="max">5.0</sumStat>
+  <sumStat type="mean">3.3755056179775282</sumStat>
+  <sumStat type="stdev">1.3802324469570724</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>poorest</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>poor</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>average</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>rich</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>richest</labl>
+    <catStat type="mean"/>
+  </catgry>
+</var>
+<var ID="V123" name="quint_rur" files="F3" intrvl="discrete">
+  <varFormat type="numeric"/>
+  <location width="8"/>
+  <labl>Per capita expenditure quintiles, rural</labl>
+  <sumStat type="vald">3550</sumStat>
+  <sumStat type="invd">4450</sumStat>
+  <sumStat type="min">1.0</sumStat>
+  <sumStat type="max">5.0</sumStat>
+  <sumStat type="mean">3.3814084507042255</sumStat>
+  <sumStat type="stdev">1.3953160947094072</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>poorest</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>poor</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>average</labl>
+    <catStat type="min"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>rich</labl>
+    <catStat type="max"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>richest</labl>
+    <catStat type="mean"/>
+  </catgry>
+</var>
+<var ID="V124" name="hhweight" files="F3" intrvl="contin">
+  <varFormat type="numeric"/>
+  <location width="12"/>
+  <labl>Household weight</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">156.66755315036724</sumStat>
+  <sumStat type="max">552.2308512356647</sumStat>
+  <sumStat type="mean">312.719375</sumStat>
+  <sumStat type="stdev">71.36881118542672</sumStat>
+</var>
+<var ID="V125" name="popweight" files="F3" intrvl="contin">
+  <varFormat type="numeric"/>
+  <location width="12"/>
+  <labl>Population weight</labl>
+  <sumStat type="vald">8000</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="min">163.5288257147472</sumStat>
+  <sumStat type="max">5931.223798742139</sumStat>
+  <sumStat type="mean">1259.293398759721</sumStat>
+  <sumStat type="stdev">720.5009711311772</sumStat>
+</var>
+</dataDscr></codeBook>
